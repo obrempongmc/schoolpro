@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+ .indexbackground{
+   
+    background-color: #042331;
+
+}
+
+.box{
+    
+    background: gold;
+    filter: brightness(85%);
+    display: flex;  
+    flex-direction: column;
+    border-radius:20px ;
+    box-shadow: 0 0 128px rgb(0,0 green, 0blue,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5,);
+              
+    padding: 25px 25px;
+    width: 350px;
+    margin: 0px 10px;
+}
+div input{
+    
+    height:40px ;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    border:1px solid #c6c6c6 ;
+    
+}
+
+
+div button{
+    margin-top: 5px;
+}
+
+.sidebar{
+    position: absolute;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+    transition: all .5s ease;
+}
+
+.sidebar header{
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+    font-size: 22px;
+}
+.sidebar ul a {
+    display: block;
+    height: 80px;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    transition: .5;
+    
+    
+}
+
+ul li:hover a{
+    padding-left: 50px;
+    
+}
+ul li i{
+    padding-right: 15px ;
+}
+
+div li.sub-item{
+    padding-left: 25px;
+    background: #fff;
+    font-size: 25px;
+    align-items: center;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 20px;
+    color: rgb(241, 241, 244);
+    background: rgb(70, 70, 200);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 25px;
+
+    }    /* adminpanel css*/
+
+#check:checked{   
+    display: none; 
+}
+
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #042331; 
+
+}
+ 
+label #btn{
+    left: 40px;
+    font-size: 35px;
+    color: rgb(251, 251, 251);  
+    padding: 3px 5px;
+    margin-top: 7PX;
+    transition: all .3s ease;
+
+}
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    font-size: 30px;
+    color:rgb(155, 74, 74);
+    margin-top: 17px;
+    padding: 4px 9px;
+    transition: all .5s ease;
+    
+
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    left:250px ;
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}#check:checked ~ label #cancel{
+    left: 195px;  
+
+}
+
+
+.back{ 
+    padding: 0;
+    margin: 0;
+    background: #0a5275;
+    
+    
+}
+section{
+    background: url("back1212.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+   
+     
+}
+#check:checked~ section{
+    margin-left: 250px;
+    filter: brightness(50%);
+}
+/* register staff css*/
+h2{
+    color: white;
+    font-size: 29px;
+}
+.field{
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+
+}
+
+
+.full-size {
+    width: 100px;
+    height: 35px;
+    background: #0e36fd;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+
+}
+.field input{
+    height:40px ;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    border:1px solid #c6c6c6 ;
+    text-align: center;
+}
+.namecontainer {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.reg_container{
+
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+
+
+}
+.nametext{
+    width: 100%; /* Adjust as needed, leave some space for margins */
+     /* Adjust as needed */
+    float: left;
+}
+
+/*staffpanel css*/
+.time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    
+    width: 60vw;
+     
+}
+ .date{
+    
+    border-radius: 5px;
+    width: 100%;
+    height: 55px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    
+
+
+}
+div .cover label {
+    
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid #042331;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    
+   
+   
+   
+
+}
+ .back{
+    padding-top: 0px;
+    background: #063146;
+}
+
+
+button.btn{
+    display: flex;
+    width: 100px;
+    overflow: hidden;
+    font-size: 30px;
+    font-weight: bold;
+    
+
+}
+
+div .form-group .btn{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-right: 50px;
+    
+}
+.sex{
+    display:flex;
+    padding-left: 25px;
+    width: 40px; /* Adjust as needed, leave some space for margins */
+    
+
+
+}
+.radio{
+    width: 20px;
+    height: 20px;
+}
+input #date{
+
+    display: flex;
+    overflow: hidden;
+}
+body > div > div > div.container.c.p-1.md-4.border-black > div.sex.form-group label{
+    margin: 2px;
+    
+}
+#sex{
+    margin: 0 13px;
+}
+.allergy{
+    size: 15px;
+}
+
+
+ .dropdown-item a {
+    cursor: pointer;
+}
+
+/* index page */
+    
+ 
+
+
+
+
+
+
+
+ 

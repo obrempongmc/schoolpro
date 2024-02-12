@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+table{
+    border: 1px solid black;
+}
+.schooldetail{
+    background: rgb(217, 217, 217);
+    margin: 0;
+    padding: 0;
+}
