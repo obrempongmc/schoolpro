@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title> index</title>
     <link rel="stylesheet" href="styles.css">
-    
+<script src="scripts.js"></script>
    <link href="css/bootstrap.min.css" rel="stylesheet"/>
    <script src="js/bootstrap.bundle.js"></script>  
    <link rel="stylesheet" href="font-6/css/all.css">
@@ -42,7 +42,9 @@
              <label for="">Password</label>
              <input type="password" name="password" autocomplete="off" required>
 
-             <a href="#" class=""><button class="btn btn-dark ">admin</button></a>
+             <a href="#" class=""><button onclick="
+    document.getElementById('diplay').innerHTML='you logging in as admin ';
+" class="btn btn-dark " >admin</button></a>
              <a href="#" class=""><button class="btn btn-dark ">staff</button></a> 
            </div>
             <style>
@@ -54,12 +56,17 @@
                     border-radius: 5px;
                 }
             </style>
-
-              
+            
+            
                 
             </div>
                 <div class="" >
-                  Don't have Accounts <a href="loginreg.html"><button style="background-color: goldenrod; color:green;border:none; padding:2px;">sign in</button></a>
+
+                  Don't have Accounts <a href="loginreg.html">
+                    <button style="background-color: goldenrod; color:green;border:none; padding:2px;">sign in</button></a>
+                <div>
+                <p id="display" style="color:black"></p>
+                </div>
                 </div>
         
                 
@@ -72,6 +79,7 @@
           
              
         </div> 
+        
         
         
         </form>
